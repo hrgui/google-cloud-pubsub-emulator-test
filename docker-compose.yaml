@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  pubsub-emulator:
+    command: start --host-port 0.0.0.0:8538
+    image: bigtruedata/gcloud-pubsub-emulator
+    restart: always
+    ports:
+      - 8538:8538
